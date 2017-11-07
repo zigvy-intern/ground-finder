@@ -4,4 +4,5 @@ const ItemList = ({content = () => null }) => (
     <p>This is where the items will be.</p>
   </div>
 );
+
 export default ItemList;

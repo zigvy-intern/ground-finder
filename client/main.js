@@ -4,8 +4,10 @@ import initContext from './configs/context';
 import coreModule from './modules/core';
 import usersModule from './modules/users';
 import itemsModule from './modules/items';
+
 // init context
 const context = initContext();
+
 // create app
 const app = createApp(context);
 app.loadModule(coreModule);
