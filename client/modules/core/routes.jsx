@@ -2,6 +2,7 @@ import React from 'react';
 import {mount} from 'react-mounter';
 import Layout from './components/MainLayout.jsx';
 import ItemList from '../items/components/ItemList.jsx';
+import Body from '../items/components/Body.jsx';
 import Login from '../users/containers/Login.js';
 import NewUser from '../users/containers/NewUser.js';
 
@@ -11,7 +12,7 @@ export default function (injectDeps, {FlowRouter}) {
     name: 'items.list',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<ItemList />)
+        content: () => (<div><Body /><ItemList /></div>)
       });
     }
   });
@@ -29,7 +30,7 @@ export default function (injectDeps, {FlowRouter}) {
     name: 'users.login',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<Login />)
+        content: () => (<div><Login /></div>)
       });
     }
   });
