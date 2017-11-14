@@ -27,12 +27,12 @@
     "bcrypt": "^1.0.3",
     "domready": "^1.0.8",
     "font-awesome": "^4.7.0",
-    "mantra-core": "^1.2.0",
-    "react": "^0.14.6",
+    "mantra-core": "^1.7.0",
+    "react": "^0.14.9",
     "react-bootstrap": "^0.31.5",
     "react-bootstrap-datetimepicker": "0.0.22",
-    "react-dom": "^0.14.6",
+    "react-dom": "^0.14.9",
     "react-fontawesome": "^1.6.1",
-    "react-mounter": "^1.0.0"
+    "react-mounter": "^1.2.0"
   }
 }
