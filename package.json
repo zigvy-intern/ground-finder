@@ -33,6 +33,7 @@
     "react-bootstrap-datetimepicker": "0.0.22",
     "react-dom": "^0.14.9",
     "react-fontawesome": "^1.6.1",
-    "react-mounter": "^1.2.0"
+    "react-mounter": "^1.2.0",
+    "simpl-schema": "^0.5.0"
   }
 }
