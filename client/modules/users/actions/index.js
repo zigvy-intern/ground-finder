@@ -1,4 +1,6 @@
 import users from './users';
-export default {
-users
+
+const actions = {
+  users
 };
+export default actions;

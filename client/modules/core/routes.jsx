@@ -30,7 +30,7 @@ export default function (injectDeps, {FlowRouter}) {
     name: 'users.login',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<div><Login /></div>)
+        content: () => (<Login />)
       });
     }
   });
