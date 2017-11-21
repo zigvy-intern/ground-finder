@@ -6,7 +6,7 @@ const Layout = ({content}) => (
         <Navbar inverse style={{backgroundColor:"black"}} collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#"><img src= "https://i.imgur.com/0hzaXxK.png" height="29" width="auto"/></a>
+              <a href="http://localhost:3000"><img src= "https://i.imgur.com/0hzaXxK.png" height="29" width="auto"/></a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -19,7 +19,7 @@ const Layout = ({content}) => (
                 <Button type="submit" ><Glyphicon glyph= "search"></Glyphicon></Button>
            </Navbar.Form>
            <Nav>
-             <NavItem eventKey={1} href="#">Find Match</NavItem>
+             <NavItem eventKey={1} href="http://localhost:3000/Matchs">Find Match</NavItem>
              <NavItem eventKey={2} href="http://localhost:3000/">Grounds</NavItem>
              <NavItem eventKey={3} href="#">Messages</NavItem>
              <NavItem eventKey={4} href="#">Upcoming</NavItem>
