@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Panel, Input,FormGroup, FormControl, Button, Glyphicon } from 'react-bootstrap';
+import { Col, Panel, Input,FormGroup, FormControl, Button, Glyphicon, Checkbox } from 'react-bootstrap';
 import ItemList from '../../items/components/ItemList.jsx'
 
   class Login extends React.Component {
@@ -15,6 +15,7 @@ import ItemList from '../../items/components/ItemList.jsx'
                         <FormGroup>
                           <FormControl inputRef={mail => this.refMail = mail} type="email" placeholder="Email" />
                           <FormControl inputRef={password => this.refPass = password} type="password" placeholder="Password" />
+                          <Checkbox>Remember me</Checkbox>
                           <Button onClick={this.login.bind(this)}
                           bsStyle="primary" type="submit" >Login </Button>
                         </FormGroup>
