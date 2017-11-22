@@ -15,7 +15,7 @@ export default function (injectDeps, {FlowRouter}) {
     name: 'items.list',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<div><Body /><ItemList /></div>)
+        content: () => (<Body />)
       });
     }
   });
