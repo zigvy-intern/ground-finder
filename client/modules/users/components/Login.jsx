@@ -1,12 +1,13 @@
 import React from 'react';
-import { Col, Panel, Input,FormGroup, FormControl, Button, Glyphicon, Checkbox } from 'react-bootstrap';
-import ItemList from '../../items/components/ItemList.jsx'
+import { Grid, Col, Panel, Input,FormGroup, FormControl, Button, Glyphicon, Checkbox } from 'react-bootstrap';
+
 
   class Login extends React.Component {
       render() {
         const {error} = this.props;
           return (
-            <div>
+            <div style={{padding:"10px",paddingBottom:"350px"}} >
+              <Grid>
               <Col xs={12} sm={6} smOffset={3}>
                 <Panel>
                   <h1>Login</h1>
@@ -22,7 +23,7 @@ import ItemList from '../../items/components/ItemList.jsx'
                       </form>
                     </Panel>
                   </Col>
-                  <ItemList />
+                </Grid>
             </div>
 
               )

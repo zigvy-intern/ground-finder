@@ -5,7 +5,7 @@ class Matchs extends React.Component {
   render() {
     return(
 
-    <div>
+    <div style={{paddingBottom:"60px"}}>
       <Grid>
     <Row>
     <Col md={12} lg={12}>
@@ -42,7 +42,7 @@ class Matchs extends React.Component {
     <br></br>
     <Row>
       <Col xs={9} md={6}>
-        <Thumbnail ><a href="http://localhost:3000/Detail"><img src="https://seeklogo.com/images/C/chelsea-fc-logo-A24FEB6BFB-seeklogo.com.png" style={{width:"100",height:"100"}} alt="240x200" /></a>
+        <Thumbnail ><a href=""><img src="https://seeklogo.com/images/C/chelsea-fc-logo-A24FEB6BFB-seeklogo.com.png" style={{width:"100",height:"100"}} alt="240x200" /></a>
           <h3>Chelsea</h3>
           <p>Old Trafford Stadium</p>
 

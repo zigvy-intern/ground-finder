@@ -2,16 +2,19 @@ export default{
 
   create({Meteor, LocalState}, email, password, name, phoneNumber) {
     if (!email) {
-      return LocalState.set('CREATE_USER_ERROR', 'Email, Name, Phone Number is required.');
+      return LocalState.set('CREATE_USER_ERROR', 'Email is required.');
+    }
+    if (!email,!password){
+      return LocalState.set('CREATE_USER_ERROR','Email, Password is required.');
     }
     if (!password) {
-      return LocalState.set('CREATE_USER_ERROR', 'Password, Name, Phone Number is required.');
+      return LocalState.set('CREATE_USER_ERROR', 'Password is required.');
     }
     if (!name) {
-      return LocalState.set('CREATE_USER_ERROR', 'Email, Password, Phone Number is required.');
+      return LocalState.set('CREATE_USER_ERROR', 'Name is required.');
     }
     if (!phoneNumber) {
-      return LocalState.set('CREATE_USER_ERROR', 'Email, Password, Name is required.');
+      return LocalState.set('CREATE_USER_ERROR', 'Phone Number is required.');
     }
   LocalState.set('CREATE_USER_ERROR', null);
   Accounts.createUser({email, password, name, phoneNumber});
