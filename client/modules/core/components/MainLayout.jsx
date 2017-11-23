@@ -42,6 +42,7 @@ const Layout = ({content}) => (
         <div>
           <Grid>
             <Row>
+              <hr />
               <Navbar style={{height:"80px",position:"relative",zIndex:"-1",width:"100%",backgroundColor:"white",borderColor:"transparent",clear:"both",bottom:"0"}} >
                  <Navbar.Header >
                    <Navbar.Brand>
