@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pagination,Button, Thumbnail, Row, Col, Navbar, MenuItem, Form, FormGroup, FormControl, ControlLabel, Glyphicon, ResponsiveEmbed, Grid} from 'react-bootstrap';
+import {Pagination,Button, Thumbnail, Row, Col, Navbar, MenuItem, Form, FormGroup, FormControl, ControlLabel, Glyphicon, ResponsiveEmbed, Grid,ButtonGroup} from 'react-bootstrap';
 
 class Matchs extends React.Component {
   render() {
@@ -7,38 +7,40 @@ class Matchs extends React.Component {
 
     <div style={{paddingBottom:"60px"}}>
       <Grid>
-    <Row>
-    <Col md={12} lg={12}>
-    <Form inline>
-    <FormGroup>
-    <h2>Matchs </h2>
-    </FormGroup>
-    {' '}
-    <FormGroup controlId="formControlsSelect">
-    <FormControl componentClass="select" placeholder="select">
-      <option value="Select">Nearest</option>
-      <option value="other">Farest</option>
-    </FormControl>
-    </FormGroup>
-    {' '}
+        <Row>
+          <Col md={12} lg={12}>
+            <Form inline>
+              <FormGroup>
+                <h2>Matchs </h2>
+              </FormGroup>
+              {' '}
+              <FormGroup controlId="formControlsSelect">
+                <FormControl componentClass="select" placeholder="select" style={{paddingRight:"30px"}}>
+                  <option value="Select">Nearest</option>
+                  <option value="other">Farest</option>
+                </FormControl>
+              </FormGroup>
+              {' '}
 
-    <FormGroup controlId="formControlsSelect">
-      <FormControl componentClass="select" placeholder="select">
-        <option value="select">Rating</option>
-        <option value="other">...</option>
-      </FormControl>
-    </FormGroup>
-    {' '}
-    <Navbar.Form pullRight>
-    <FormGroup>
-        <FormControl type="text" placeholder="Search Matchs" />
-    </FormGroup>
-      <Button type="submit" ><Glyphicon glyph= "search"></Glyphicon></Button>
-    </Navbar.Form>
+              <FormGroup controlId="formControlsSelect">
+                <FormControl componentClass="select" placeholder="select">
+                  <option value="select">Rating</option>
+                  <option value="other">...</option>
+                </FormControl>
+              </FormGroup>
+              {' '}
+              <Navbar.Form pullRight>
+                <FormGroup controlId="formControlsSelect" style={{paddingRight:"25"}}>
+                  <FormControl type="text" placeholder="Search Matchs" style={{borderColor:"transparent",backgroundColor:"#f2f2f2",color:"#d9d9d9"}} />
 
-    </Form>
-    </Col>
-    </Row>
+                    <Button type="submit" style={{borderColor:"transparent"}} ><Glyphicon glyph= "search" ></Glyphicon></Button>
+                  
+                </FormGroup>
+                <Button bsStyle="success" bsSize="large">Quick Match</Button>
+              </Navbar.Form>
+            </Form>
+          </Col>
+        </Row>
     <br></br>
     <Row>
       <Col xs={9} md={6}>

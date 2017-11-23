@@ -40,7 +40,7 @@ class Body extends React.Component {
             </Navbar.Form>
             <Navbar.Form pullRight>
               <FormGroup>
-                <FormControl style={{borderColor:"transparent"}} type="text" placeholder="Search Grounds..." />
+                <FormControl style={{borderColor:"transparent",backgroundColor:"#f2f2f2",color:"#d9d9d9"}} type="text" placeholder="Search Grounds..." />
               </FormGroup>
               {' '}
               <Button style={{borderColor:"transparent"}} type="submit" ><Glyphicon glyph= "search"></Glyphicon></Button>
